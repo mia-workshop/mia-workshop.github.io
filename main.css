@@ -1,0 +1,39 @@
+body {
+  font-size: 16px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+.navbar-custom {
+  background-color: #006400;
+}
+
+.navbar {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.container {
+  max-width: 50rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.workshop_title {
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
