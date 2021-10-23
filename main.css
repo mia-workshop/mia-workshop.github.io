@@ -7,8 +7,18 @@ body {
 h2 {
   font-size: 1.4rem;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #333;
+}
+
+a {
+  color: #009933;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #009933;
+  text-decoration: underline;
 }
 
 .navbar-custom {
