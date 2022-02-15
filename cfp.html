@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="main.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>MIA: Call for Papers</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MIA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1"
+                >Call for Papers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shared_task.html" tabindex="-1"
+                >Shared Task</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container header">
+      <h1 class="workshop_title">Call for Papers</h1>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Overview and Main focuses</h2>
+      <p>
+        State-of-the-art NLP technologies such as question answering and
+        information retrieval systems have enabled many people to access
+        information efficiently. However, these advances have been made in an
+        English-first way, leaving other languages behind. Large-scale
+        multilingual pre-trained models have achieved significant performance
+        improvements on many multilingual NLP tasks (Hu et al., 2020; Conneau et
+        al., 2020; Xue et al., 2020) where input text is provided. Yet, on
+        knowledge-intensive tasks that require retrieving knowledge and
+        generating output (Petroni et al., 2021), we observe limited progress
+        (Asai et al., 202). Moreover, in many languages, existing knowledge
+        sources are critically limited (Roy et al., 2020), and thus finding
+        knowledge in another language with abundant knowledge sources is often
+        required. Despite many exciting recent progresses (Karpukhin et al.,
+        2020) in English knowledge-intensive tasks, transferring such progresses
+        to a wider set of languages is non-trivial as in many languages.
+      </p>
+      <p>
+        Our workshop focuses on building efficient, performant information
+        access systems in a larger set of typologically diverse languages. We
+        seek submissions on various aspects of this challenging task—(i)
+        knowledge source / evaluation benchmark curation for low-resource
+        languages, (ii) learning scenarios and model architectures for building
+        multilingual information access system.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Research Paper Track</h2>
+      <p>
+        We encourage paper submissions that focus on various aspects of
+        cross-lingual knowledge-intensive NLP tasks, including but not limited
+        to:
+      </p>
+      <ul>
+        <li>Multilingual machine reading comprehension (MRC)</li>
+        <li>Multilingual open-retrieval question answering (QA)</li>
+        <li>Cross-lingual information retrieval</li>
+        <li>Multilingual information extraction</li>
+        <li>Cross-lingual fact checking</li>
+        <li>Cross-lingual summarization</li>
+        <li>System descriptions from our shared tasks (See below)</li>
+      </ul>
+
+      <p>We also encourage submissions on related topics such as:</p>
+      <ul>
+        <li>Multilingual argument mining</li>
+        <li>Cross-lingual semantic parsing</li>
+        <li>Quantifying information content available in public</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Shared Task Track</h2>
+      <p>
+        We also host a shared task on cross-lingual open-retrieval QA, which
+        covers 15 typologically diverse languages with and without training
+        data. See details at <a href="shared_task.html">this page</a>. We accept
+        system descriptions from our shared task as a workshop submission.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Submission guidelines</h2>
+
+      <p>
+        Submissions should be at least 4 and at most 8 pages, not including
+        citations; final versions of papers will be given one additional page
+        (up to 9 pages). All submissions will be reviewed according to the same
+        standards, regardless of length (i.e., there are no separate short and
+        long paper tracks). Submissions may optionally include an appendix with
+        no length restriction. The main paper must remain fully self-contained,
+        as reviewers will not be asked to review appendices. Please format your
+        papers using the standard style files for ARR submission format:
+      </p>
+      <ul>
+        <li>
+          <a href="https://github.com/acl-org/acl-style-files" target="_blank"
+            >LaTeX & Word version</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.overleaf.com/project/5f64f1fb97c4c50001b60549"
+            target="_blank"
+            >Overleaf template</a
+          >
+        </li>
+      </ul>
+      <p>
+        We accept submissions of both previously unpublished work and work
+        recently published elsewhere.
+      </p>
+      <h3>Unpublished work</h3>
+      <p>
+        Previously-unpublished work must be anonymized, as it will go through a
+        double-blind review process, and will be included in the workshop
+        proceedings if accepted. This year, we are using a hybrid submission
+        system: papers may be submitted either via the
+        <a href="https://www.softconf.com/naacl2022/MIA2022/" target="_blank"
+          >softconf START system</a
+        >
+        or
+        <a
+          href="https://openreview.net/group?id=aclweb.org/NAACL/2022/Workshop/MIA"
+          target="_blank"
+          >OpenReview</a
+        >.
+      </p>
+      <h3>Published work (non-archival track)</h3>
+      <p>
+        Recently published work does not need to be anonymized and will not go
+        thought the normal review process. Instead, authors are asked to submit
+        their published work with the reviews, and we will conduct meta-review
+        to see if the published work align with our workshop focus. The
+        submission should clearly indicate the original venue and will be
+        accepted if the organizers think the work will benefit from exposure to
+        the audience of this workshop. Work published elsewhere will not be
+        included in the workshop proceedings. Please submit your published work
+        <a href="https://forms.gle/AGwB6PtUcSuq2Vsx5" target="_blank">here</a>.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Dual submissions</h2>
+      <p>
+        We allow submissions that are also under review in other venues, but
+        please note that many conferences do not allow it, so make sure that you
+        do not violate their policy as well. Please follow double-submission
+        policy from ACL. Accepted cross-submissions will be presented as
+        posters, with an indication of the original venue if it's already
+        accepted elsewhere.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Anonymity period</h2>
+      <p>
+        We do not enforce an anonymity period. We do not restrict posting on
+        preprint servers such as arXiv at any point of time.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Important dates</h2>
+
+      <ul>
+        <li>Apr 8, 2022: Research Paper Track Paper Due Date</li>
+        <li>Apr XX, 2022: Shared Task System Output Deadline</li>
+        <li>Apr 29, 2022: Shared Task System Description Paper Due Date</li>
+        <li>May 6, 2022: Notification of Acceptance for Research Papers</li>
+        <li>
+          May 14, 2022: Notification of Acceptance for System Descriptions
+        </li>
+        <li>May 20, 2022: Camera-ready papers due</li>
+        <li>July 14 or 15, 2022: MIA Workshop</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>References</h2>
+      <ol>
+        <li>
+          Hu et al. "XTREME: A massively multilingual multi-task benchmark for
+          evaluating cross-lingual generalisation." In ICML. 2020.
+        </li>
+        <li>
+          Conneau et al. "Unsupervised cross-lingual representation learning at
+          scale." In ACL. 2020.
+        </li>
+        <li>
+          Xue et al. “mT5: A Massively Multilingual Pre-trained Text-to-Text
+          Transformer.” In NAACL. 2021.
+        </li>
+        <li>
+          Petroni et al. “KILT: a Benchmark for Knowledge Intensive Language
+          Tasks.” In NAACL. 2021.
+        </li>
+        <li>
+          Asai et al. “XOR QA: Cross-lingual Open-Retrieval Question Answering.”
+          In NAACL, 2021.
+        </li>
+        <li>
+          Roy et al.. "Information asymmetry in Wikipedia across different
+          languages: A statistical analysis." Journal of the Association for
+          Information Science and Technology. 2021.
+        </li>
+        <li>
+          Karpukhin et al. “Dense Passage Retrieval for Open-Domain Question
+          Answering”. In EMNLP. 2020.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
