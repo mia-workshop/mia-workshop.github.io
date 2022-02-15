@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat:300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="main.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>MIA: Shared Task</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MIA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cfp.html" tabindex="-1"
+                >Call for Papers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1">Shared Task</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container header">
+      <h1 class="workshop_title">
+        Shared Task on Cross-lingual Open-reteval QA
+      </h1>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Task Format</h2>
+      <p>
+        Cross-lingual Open Question Answering is a challenging multilingual NLP
+        task, where given questions are written in a user’s preferred language,
+        a system needs to find evidence in large-scale document collections
+        written in many different languages, and return an answer in the user’s
+        preferred language, as indicated by their question. For instance, a
+        system needs to answer in Arabic to answer an Arabic question, but it
+        can use evidence passages written in <em>any language</em> included in a
+        large-document corpus.
+      </p>
+
+      <p>
+        The evaluation is based on the macro-averaged scores across different
+        target languages.
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Target Languages</h2>
+      <p>
+        Our shared task will evaluate systems in <strong>14</strong> languages,
+        <strong>7</strong> of which will <strong>not</strong> be covered in our
+        training data. The training and evaluation data is originally from
+        Natural Questions, XOR-TyDi QA, and MKQA (See details below in the
+        Dataset section).
+      </p>
+
+      The full list of the languages:
+      <ul>
+        <li>
+          <strong>Languages with training data:</strong> Arabic, Bengali,
+          English Finnish, Japanese, Korean, Russian, Telugu
+        </li>
+        <li>
+          <strong>Languages without training data:</strong> Spanish, Khmer,
+          Malay, Swedish, Turkish Chinese (simplified)
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>Evaluations</h2>
+      <p>
+        Participants will run their systems on the evaluation files (without
+        answer data) and then submit their predictions to our competition site
+        hosted at <a href="https://eval.ai/" target="_blank">eval.ai</a>.
+        Systems will first be evaluated using automatic metrics:
+        <strong>Exact match</strong> and <strong>token-level F1</strong> (Lee et
+        al., 2019; Asai et al., 2021; Longpre et al., 2021). For non-spacing
+        languages (i.e., Japanese, Khmer and Chinese) we use token-level
+        tokenizers, Mecab, khmernltk and jieba to tokenize both predictions and
+        ground-truth answers.
+      </p>
+      <p>
+        Due to the difference of the datasets' nature, we will calculate
+        macro-average scores on XOR-TyDi and MKQA datasets, and then take the
+        average of the XOR-TyDi QA average {F1, EM} and MKQA average {F1, EM}.
+      </p>
+      <p>
+        Although EM is often used as a primarily evaluate metric for English
+        open-retrieval QA, the risk of surface-level mismatching (Min et al.,
+        2021) can be more pervasive in cross-lingual open-retrieval QA.
+        Therefore, we will use F1 as our primary metric and rank systems using
+        their macro averaged F1 scores.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Prizes</h2>
+      <ul>
+        <li>
+          <strong>The Best {unconstrained, constrained} system:</strong> These
+          prizes will be given to the {constrained, unconstrained} systems (see
+          the details in the Dataset Section) obtaining the highest
+          macro-average F1 scores.
+        </li>
+        <li>
+          <strong>Special award:</strong> We plan to give additional award(s) to
+          systems that employ a creative approach to the problem, or undertake
+          interesting experiments to better understand the problem. This award
+          is designed to encourage interesting contributions even from teams
+          without access to the largest models or computational resources.
+          Examples include attempts to improve generalization ability/language
+          equality, reducing model sizes, or understanding the weaknesses in
+          existing systems.
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Important Dates</h2>
+      <ul>
+        <li>
+          February 2022: Shared task baseline & training/development data
+          release
+        </li>
+        <li>
+          Early March 2022: Shared task participant registration (soft) deadline
+        </li>
+        <li>
+          Late March 2022: Shared task test set to release to the participants
+        </li>
+        <li>April 25, 2022: Shared task prediction submission deadline</li>
+        <li>April 29, 2022: Late paper submission deadline</li>
+        <li>July 10, 2022: NAACL Workshop date</li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2>Training Dataasets</h2>
+      <p>
+        We release training data, which consists of English open-QA data from
+        Natural Questions-open (Kwiatkowski et al., 2019; Lee et al., 2019) and
+        the XOR-TyDi QA train data. See our
+        <a
+          href="https://github.com/mia-workshop/MIA-Shared-Task-2022"
+          target="_blank"
+          >GitHub repository</a
+        >
+        for details:
+      </p>
+
+      <p>
+        To keep submissions comparable, even in the unconstrained setup,
+        <strong
+          >participants are not allowed to train on the development data and
+          also the subsets of the Natural Questions and TyDi QA data, which are
+          used to create MKQA or XOR-TyDi QA data.</strong
+        >
+        We will release the list of the IDs of those prohibited questions before
+        the official start of the shared task.
+        <strong
+          >All submissions should explicitly state that this constraint was
+          properly followed.</strong
+        >
+      </p>
+      <h3>Constrained Setup</h3>
+      <p>
+        To be considered as constrained setup submission, participants are
+        required to use our official training corpus, which consists of examples
+        pooled from the aforementioned datasets. No other question answering
+        data may be used for training. We allow and encourage participants to
+        use off-the-shelf tools for linguistic annotation (e.g. POS taggers,
+        syntactic parsers), as well as any publicly available unlabeled data and
+        models derived from these (e.g. word vectors, pre-trained language
+        models).
+      </p>
+      <h3>Unconstrained Setup</h3>
+      <p>
+        Although participants can use whatever data, all of the submissions of
+        the models trained on additional human-annotated question answering data
+        will be considered as “unconstrained” setup, and participants need to
+        clarify it and provide the details of the additional resources used
+        during the training. For example, you can use publicly available QA
+        datasets (e.g., CMRC 2018, FQuAD) to create a larger scale of training
+        data. Note that automatically augmenting the original training data
+        using machine translations or additional resources (e.g., Wikidata
+        information) will still be considered as “constrained” as mentioned
+        above. Yet, we encourage participants who use additional training data
+        or augment training data using those tools to release their training
+        corpora. Again, even in the unconstrained setup, participants may not
+        train on the development subsets of Natural Questions and TyDi QA.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Development & Test Datasets</h2>
+      <p>
+        The evaluation data is originally from the XOR-TyDi QA dataset and MKQA
+        data.
+      </p>
+      <ul>
+        <li>
+          <a href="https://nlp.cs.washington.edu/xorqa/" target="_blank"
+            >XOR-TyDi QA</a
+          >
+          (Asai et al., 2021)
+        </li>
+        <li>
+          <a href="https://github.com/apple/ml-mkqa" target="_blank">MKQA</a
+          >-answerable (Longpre et al., 2021) (<em
+            >We only include the questions with answer annotations and remove
+            the “no answers” questions</em
+          >)
+        </li>
+      </ul>
+      <p>
+        As the original MKQA dataset does not have a dev/test split, we will
+        randomly split the data into dev (1758 questions) and test (5000)
+        questions.
+      </p>
+      <p>
+        Although we have multiple ground-truth answers from XOR-TyDi QA, for
+        questions that have Wikipedia entities as answers, we use Wikipedia
+        aliases as valid answers along with the given answer, following Trivia
+        QA (Joshi et al., 2017) and MKQA.
+      </p>
+
+    </div>
+    <div class="container">
+      <h2>Answer Retrieval Corpus</h2>
+      <p>
+        We will release preprocessed Wikipedia passages in the target 14
+        languages. If you are participating in the constrained tack, you may not
+        use any additional knowledge sources. If you are participating in the
+        unconstrained track, you can use additional knowledge sources (e.g.,
+        non-Wikipedia articles), but again you have to provide detailed
+        descriptions of the knowledge sources. We also encourage you to release
+        your own knowledge sources if possible.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Model Size</h2>
+      <p>
+        We do not have any restrictions on the model size or model type, but
+        participants will be required to provide detailed information about
+        their models and training procedures as well as the answer retrieval
+        corpus.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Baseline Models</h2>
+      <p>
+        We will release easy-to-use baselines for cross-lingual open-retrieval
+        QA in February, with trained models. Please stay tuned!
+      </p>
+    </div>
+    <div class="container">
+      <h2>Data Format and Submission Instructions</h2>
+      <p>
+        Submission instructions will be released in February 2022. We will
+        detail data format and submission instructions, along with our baseline
+        models, in our
+        <a
+          href="https://github.com/mia-workshop/MIA-Shared-Task-2022"
+          target="_blank"
+          >GitHub repository</a
+        >.
+      </p>
+
+      <p>
+        For any inquiry about the shared task and the submission, please make a
+        new issue in the repository.
+      </p>
+
+      <p>
+        We are planning to host our shared task on the
+        <a href="https://eval.ai/" target="_blank">eval.ai</a> platform.
+      </p>
+    </div>
+    <div class="container">
+      <h2>Registration</h2>
+      <p>
+        If you are participating in our shared task, please register your team
+        through
+        <a href="https://forms.gle/ioWDn4UCKyftTVCk6" target="_blank"
+          >this form</a
+        >. It will help us to plan better for human evaluation, etc., as well as
+        occasionally send announcements when there is a major update on baseline
+        or dataset.
+      </p>
+    </div>
+  </body>
+</html>
