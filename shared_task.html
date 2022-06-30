@@ -61,6 +61,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="#" tabindex="-1">Shared Task</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="papers.html" tabindex="-1"
+                >Accepted Papers</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -70,6 +75,68 @@
       <h1 class="workshop_title">
         Shared Task on Cross-lingual Open-Retrieval QA
       </h1>
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Final Results (Updated: June 30, 2022)</h2>
+      <p style="font-size: 1.1em">
+        The final micro F1 scores of the proposed systems in the shared task:
+      </p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>System</th>
+            <th>Total</th>
+            <th>XOR QA</th>
+            <th>MKQA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Baseline</td>
+            <td>27.55</td>
+            <td>37.95</td>
+            <td>17.14</td>
+          </tr>
+          <tr>
+            <td><em>Constrained systems:</em></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&emsp;mLUKE-FID</td>
+            <td>31.61</td>
+            <td>40.93</td>
+            <td>22.29</td>
+          </tr>
+          <tr>
+            <td>&emsp;CMUmQA</td>
+            <td>31.53</td>
+            <td>40.20</td>
+            <td><strong>22.87</strong></td>
+          </tr>
+          <tr>
+            <td>&emsp;ZusammenQA</td>
+            <td>27.00</td>
+            <td>37.95</td>
+            <td>16.04</td>
+          </tr>
+          <tr>
+            <td><em>Unconstrained systems:</em></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&emsp;Texttron</td>
+            <td><strong>32.02</strong></td>
+            <td><strong>45.50</strong></td>
+            <td>18.54</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <hr />
     <div class="container">
@@ -143,9 +210,7 @@
     <div class="container">
       <h2>Prizes</h2>
       <ul>
-        <p>
-          We have 3 award categories, each with Google Cloud credit prizes!
-        </p>
+        <p>We have 3 award categories, each with Google Cloud credit prizes!</p>
         <li>
           <strong>The Best {unconstrained, constrained} system:</strong> These
           prizes will be given to the {constrained, unconstrained} systems (see
@@ -153,14 +218,14 @@
           macro-average F1 scores.
         </li>
         <li>
-          <strong>Creativity award:</strong> We plan to give additional award(s) to
-          systems that employ a creative approach to the problem, or undertake
-          interesting experiments to better understand the problem. This award
-          is designed to encourage interesting contributions even from teams
-          without access to the largest models or computational resources.
-          Examples include attempts to improve generalization ability/language
-          equality, reducing model sizes, or understanding the weaknesses in
-          existing systems.
+          <strong>Creativity award:</strong> We plan to give additional award(s)
+          to systems that employ a creative approach to the problem, or
+          undertake interesting experiments to better understand the problem.
+          This award is designed to encourage interesting contributions even
+          from teams without access to the largest models or computational
+          resources. Examples include attempts to improve generalization
+          ability/language equality, reducing model sizes, or understanding the
+          weaknesses in existing systems.
         </li>
       </ul>
     </div>
@@ -168,7 +233,9 @@
       <h2>Important dates</h2>
 
       <ul>
-        <li>May 15, 2022: Shared Task System & System Description Paper Due Dates</li>
+        <li>
+          May 15, 2022: Shared Task System & System Description Paper Due Dates
+        </li>
         <li>July 15, 2022: MIA Workshop</li>
       </ul>
     </div>
@@ -209,12 +276,10 @@
         use off-the-shelf tools for linguistic annotation (e.g. POS taggers,
         syntactic parsers), as well as any publicly available unlabeled data and
         models derived from these (e.g. word vectors, pre-trained language
-        models).
-
-        NB: In the constrained setup, participants may NOT use external blackbox 
-        APIs such as Google Search API / Google Translate API for *inference*, 
-        but they are permitted to use them for offline data augmentation or 
-        training.
+        models). NB: In the constrained setup, participants may NOT use external
+        blackbox APIs such as Google Search API / Google Translate API for
+        *inference*, but they are permitted to use them for offline data
+        augmentation or training.
       </p>
       <h3>Unconstrained Setup</h3>
       <p>
@@ -230,11 +295,10 @@
         above. Yet, we encourage participants who use additional training data
         or augment training data using those tools to release their training
         corpora. Again, even in the unconstrained setup, participants may not
-        train on the development subsets of Natural Questions and TyDi QA.
-
-        NB: In the unconstrained setup, participants may use external blackbox 
-        APIs such as Google Search API / Google Translate API for inference 
-        or training.
+        train on the development subsets of Natural Questions and TyDi QA. NB:
+        In the unconstrained setup, participants may use external blackbox APIs
+        such as Google Search API / Google Translate API for inference or
+        training.
       </p>
     </div>
     <div class="container">
@@ -317,8 +381,13 @@
       </p>
 
       <p>
-        You can make submissions at the 
-        <a href="https://eval.ai/web/challenges/challenge-page/1638/overview" target="_blank">eval.ai</a> platform.
+        You can make submissions at the
+        <a
+          href="https://eval.ai/web/challenges/challenge-page/1638/overview"
+          target="_blank"
+          >eval.ai</a
+        >
+        platform.
       </p>
     </div>
     <div class="container">

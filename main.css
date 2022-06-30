@@ -56,3 +56,11 @@ a:hover {
   font-weight: 700;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
+
+.workshop_subtitle {
+  margin-top: 1.0rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
