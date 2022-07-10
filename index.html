@@ -121,18 +121,103 @@
     </div>
 
     <div class="container">
-      <hr>
+      <hr />
       <h2>Program</h2>
       <ul>
         <li>09:00-09:10 - <em>Opening remark</em></li>
         <li>09:10-10:30 - <em>Invited talks & QA (1)</em></li>
         <ul class="square">
-          <li><b><a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi">Avi Sil</a></b> -- PrimeQA: Making multilingual information access via Question Answering research easily available & replicable</li>
-          <li><b><a href="https://ruder.io/">Sebastian Ruder</a></b> -- Building Parameter-efficient Multilingual Models</li>
-          <li><b><a href="https://andrews2017.github.io/">Andre Niyongabo Rubungo</a></b> -- KinyaBERT: a Morphology-aware Kinyarwanda Language Model </li>
-          <li><b><a href="http://www.cs.columbia.edu/~kathy/">Kathleen McKeown</a></b></li>
-         </ul>
-        <li>10:30-11:15 - <em>Panel (1) Modeling for many world languages </em></li> 
+          <li>
+            <b
+              ><a
+                href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi"
+                >Avi Sil</a
+              ></b
+            >
+            -- PrimeQA: Making multilingual information access via Question
+            Answering research easily available & replicable
+            <a
+              class="btn btn-xsmall btn-outline-success"
+              data-bs-toggle="collapse"
+              href="#sil_abstract"
+              role="button"
+              aria-expanded="false"
+              aria-controls="sil_abstract"
+            >
+              Abstract
+            </a>
+            <div class="collapse" id="sil_abstract">
+              <div class="card card-body">
+                <p>
+                  Currently, multilingual information access (MIA) particularly
+                  by Question Answering (QA) has a major problem. Most QA
+                  research software sits in someone's own Github repository and
+                  none of those softwares work easily with each other. This
+                  problem is exacerbated in different modalities of QA research:
+                  document retrieval, reading comprehension, QA over tables, QA
+                  over images, videos etc. We're introducting PrimeQA, a
+                  one-stop shop for all Open QA problems. I'll talk about how
+                  PrimeQA is remediating the MIA problem by bringing together
+                  all these QA software/ solutions as building blocks and
+                  creating a one repository where a user/student can come in and
+                  quickly replicate the latest/greatest QA paper/publication
+                  that’s at the top of a leaderboard (e.g. XOR TyDi) without
+                  re-inventing the wheel.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <b><a href="https://ruder.io/">Sebastian Ruder</a></b> -- Building
+            Parameter-efficient Multilingual Models
+            <a
+              class="btn btn-xsmall btn-outline-success"
+              data-bs-toggle="collapse"
+              href="#ruder_abstract"
+              role="button"
+              aria-expanded="false"
+              aria-controls="ruder_abstract"
+            >
+              Abstract
+            </a>
+            <div class="collapse" id="ruder_abstract">
+              <div class="card card-body">
+                <p>
+                  Pre-trained multilingual models are strong baselines for
+                  multilingual applications but they often lack capacity and
+                  underperform when dealing with under-represented languages. In
+                  this talk, I will discuss work on building parameter-efficient
+                  models, which has recently received increased attention. I
+                  will discuss how such methods can be used to specialize models
+                  to specific languages, enabling strong performance even on
+                  unseen languages. I will demonstrate the benefits of this
+                  methodology such as increased robustness (to different
+                  hyper-parameter choices as well as to catastrophic forgetting)
+                  and efficiency (in terms of time, space, and samples).
+                  Finally, I will highlight future directions in this area.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <b
+              ><a href="https://andrews2017.github.io/"
+                >Andre Niyongabo Rubungo</a
+              ></b
+            >
+            -- KinyaBERT: a Morphology-aware Kinyarwanda Language Model
+          </li>
+          <li>
+            <b
+              ><a href="http://www.cs.columbia.edu/~kathy/"
+                >Kathleen McKeown</a
+              ></b
+            >
+          </li>
+        </ul>
+        <li>
+          10:30-11:15 - <em>Panel (1) Modeling for many world languages </em>
+        </li>
         <li>11:15-12:00 - <em>Poster session</em></li>
         <li>12:00-01:00 - <em>Lunch break</em></li>
         <li>01:00-01:30 - <em>Shared task session</em></li>
@@ -141,124 +226,325 @@
         <li>02:45-03:00 - <em>Break</em></li>
         <li>03:00-04:00 - <em>Invited talks & QA (2)</em></li>
         <ul class="square">
-          <li><b><a href="http://www.phontron.com/index.php?lang=en">Graham Neubig</a></b> -- GlobalBench: Measuring NLP Progress for the Entire World</li>
-          <li><b><a href="https://ai.facebook.com/people/holger-schwenk/">Holger Schwenk</a></b> -- Scaling Multilingual Sentence Representations to 200 Languages</li>
-          <li><b><a href="https://aliceoh9.github.io/">Alice Oh</a></b></li>
-         </ul>
-        <li>04:00-04:45 - <em>Panel (2) Multilingual resource creations</em></li>
+          <li>
+            <b
+              ><a href="http://www.phontron.com/index.php?lang=en"
+                >Graham Neubig</a
+              ></b
+            >
+            -- GlobalBench: Measuring NLP Progress for the Entire World
+            <a
+              class="btn btn-xsmall btn-outline-success"
+              data-bs-toggle="collapse"
+              href="#neubig_abstract"
+              role="button"
+              aria-expanded="false"
+              aria-controls="neubig_abstract"
+            >
+              Abstract
+            </a>
+            <div class="collapse" id="neubig_abstract">
+              <div class="card card-body">
+                <p>
+                  In this talk, I will discuss ongoing work on building a
+                  benchmark to measure the progress of natural language
+                  processing over every language in the world. I will first
+                  describe our methodology, and then do a demo of our current
+                  benchmark prototype and make an open call for others to join
+                  in its development.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <b
+              ><a href="https://ai.facebook.com/people/holger-schwenk/"
+                >Holger Schwenk</a
+              ></b
+            >
+            -- Scaling Multilingual Sentence Representations to 200 Languages
+            <a
+              class="btn btn-xsmall btn-outline-success"
+              data-bs-toggle="collapse"
+              href="#schwenk_abstract"
+              role="button"
+              aria-expanded="false"
+              aria-controls="schwenk_abstract"
+            >
+              Abstract
+            </a>
+            <div class="collapse" id="schwenk_abstract">
+              <div class="card card-body">
+                <p>
+                  Multilingual sentence representations are very useful to
+                  extend NLP applications to more languages. One particular
+                  application is bitext mining based on a similarity measure in
+                  such a multilingual representation space. Well known
+                  approaches are LASER or LABSE, but both are limited to about
+                  100 languages.
+                </p>
+                <p>
+                  In this talk, we report our work to extend multilingual
+                  sentence representations to 200 languages. We discuss
+                  challenges when handling low-resource languages, in particular
+                  collection of resources to train and evaluate such models.
+                  Those sentence encoders are used to mine more than one billion
+                  sentences of bitexts in 148 languages. Finally, we report the
+                  impact of the mined data when training a massively
+                  multilingual NMT system.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <b><a href="https://aliceoh9.github.io/">Alice Oh</a></b>
+          </li>
+        </ul>
+        <li>
+          04:00-04:45 - <em>Panel (2) Multilingual resource creations</em>
+        </li>
         <li>04:45-05:00 - <em>Closing session</em></li>
       </ul>
-      <hr>
+      <hr />
     </div>
 
     <div class="container">
       <h2>Invited Speakers</h2>
       <table width="700pt">
-      <tr>
-        <td width="25%" style="text-align:center">
-          <a href="http://www.cs.columbia.edu/~kathy/"><img src="imgs/KathyNW.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-        <td width="25%" style="text-align:center">
-          <a href="http://www.phontron.com/index.php?lang=en"><img src="imgs/neubig-headshot-2021-small.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-        <td width="25%" style="text-align:center">
-          <a href="https://aliceoh9.github.io/"><img src="imgs/alice_oh.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-        <td width="25%" style="text-align:center">
-          <a href="https://andrews2017.github.io/"><img src="imgs/andre_profile.png" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align:center">
-          <a href="http://www.cs.columbia.edu/~kathy/">Kathleen McKeown</a>
-        </td>
-        <td style="text-align:center">
-          <a href="http://www.phontron.com/index.php?lang=en">Graham Neubig</a>
-        </td>
-        <td style="text-align:center">
-          <a href="https://aliceoh9.github.io/">Alice Oh</a>
-        </td>
-        <td style="text-align:center">
-          <a href="https://andrews2017.github.io/">Andre Niyongabo Rubungo</a>
-        </td>
-      </tr>
-    </br>
-      <tr>
-        <td width="25%" style="text-align:center">
-          <a href="https://ruder.io/"><img src="imgs/sebastian_ruder_profile_photo_square.jpg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-        <td width="25%" style="text-align:center">
-          <a href="https://ai.facebook.com/people/holger-schwenk/"><img src="imgs/Holger-Schwenk-id.jpg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-        <td width="25%" style="text-align:center">
-          <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi"><img src="imgs/avi_sil.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-      </tr>
-      <tr>
-        <td style="text-align:center"><a href="https://ruder.io/">Sebastian Ruder</a></td>
-        <td style="text-align:center"><a href="https://ai.facebook.com/people/holger-schwenk/">Holger Schwenk</a></td>
-        <td style="text-align:center"><a href="https://ruder.io/"><a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi">Avi Sil</a></a></td>
-      </tr>
-    </table>
+        <tr>
+          <td width="25%" style="text-align: center">
+            <a href="http://www.cs.columbia.edu/~kathy/"
+              ><img
+                src="imgs/KathyNW.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+          <td width="25%" style="text-align: center">
+            <a href="http://www.phontron.com/index.php?lang=en"
+              ><img
+                src="imgs/neubig-headshot-2021-small.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+          <td width="25%" style="text-align: center">
+            <a href="https://aliceoh9.github.io/"
+              ><img
+                src="imgs/alice_oh.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+          <td width="25%" style="text-align: center">
+            <a href="https://andrews2017.github.io/"
+              ><img
+                src="imgs/andre_profile.png"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <a href="http://www.cs.columbia.edu/~kathy/">Kathleen McKeown</a>
+          </td>
+          <td style="text-align: center">
+            <a href="http://www.phontron.com/index.php?lang=en"
+              >Graham Neubig</a
+            >
+          </td>
+          <td style="text-align: center">
+            <a href="https://aliceoh9.github.io/">Alice Oh</a>
+          </td>
+          <td style="text-align: center">
+            <a href="https://andrews2017.github.io/">Andre Niyongabo Rubungo</a>
+          </td>
+        </tr>
+        <!-- </br> -->
+        <tr>
+          <td width="25%" style="text-align: center">
+            <a href="https://ruder.io/"
+              ><img
+                src="imgs/sebastian_ruder_profile_photo_square.jpg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+          <td width="25%" style="text-align: center">
+            <a href="https://ai.facebook.com/people/holger-schwenk/"
+              ><img
+                src="imgs/Holger-Schwenk-id.jpg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+          <td width="25%" style="text-align: center">
+            <a
+              href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi"
+              ><img
+                src="imgs/avi_sil.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <a href="https://ruder.io/">Sebastian Ruder</a>
+          </td>
+          <td style="text-align: center">
+            <a href="https://ai.facebook.com/people/holger-schwenk/"
+              >Holger Schwenk</a
+            >
+          </td>
+          <td style="text-align: center">
+            <a href="https://ruder.io/"
+              ><a
+                href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi"
+                >Avi Sil</a
+              ></a
+            >
+          </td>
+        </tr>
+      </table>
     </div>
     <div class="container">
       <h2>Organizing Committee</h2>
       <table width="700pt">
         <tr>
-          <td width="25%" style="text-align:center">
-            <a href="https://akariasai.github.io/"><img src="imgs/akariasai.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://akariasai.github.io/"
+              ><img
+                src="imgs/akariasai.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+              />
+            </a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="https://www.cs.utexas.edu/~eunsol/"><img src="imgs/eunsol.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://www.cs.utexas.edu/~eunsol/"
+              ><img
+                src="imgs/eunsol.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="http://www.cs.cmu.edu/~jhclark/"><img src="imgs/jon_clark.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="http://www.cs.cmu.edu/~jhclark/"
+              ><img
+                src="imgs/jon_clark.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="https://junjiehu.github.io/"><img src="imgs/junjie_hu.png" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://junjiehu.github.io/"
+              ><img
+                src="imgs/junjie_hu.png"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
         </tr>
         <tr>
-          <td style="text-align:center">
+          <td style="text-align: center">
             <a href="https://akariasai.github.io/">Akari Asai</a>
           </td>
-          <td style="text-align:center">
+          <td style="text-align: center">
             <a href="https://www.cs.utexas.edu/~eunsol/">Eunsol Choi</a>
           </td>
-          <td style="text-align:center">
-            <a href="https://research.google/people/JonathanClark/">Jonathan H. Clark</a>
+          <td style="text-align: center">
+            <a href="https://research.google/people/JonathanClark/"
+              >Jonathan H. Clark</a
+            >
           </td>
-          <td style="text-align:center">
+          <td style="text-align: center">
             <a href="https://junjiehu.github.io/">Junjie Hu</a>
           </td>
         </tr>
-      </br>
+        <!-- </br> -->
         <tr>
-          <td width="25%" style="text-align:center">
-            <a href="https://chiahsuan156.github.io/"><img src="imgs/michael_profile.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://chiahsuan156.github.io/"
+              ><img
+                src="imgs/michael_profile.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="https://homes.cs.washington.edu/~jkasai/"><img src="imgs/jungo_kasai.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://homes.cs.washington.edu/~jkasai/"
+              ><img
+                src="imgs/jungo_kasai.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="https://www.shaynelongpre.com/"><img src="imgs/shayne_longpre.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://www.shaynelongpre.com/"
+              ><img
+                src="imgs/shayne_longpre.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
-          <td width="25%" style="text-align:center">
-            <a href="https://www.ikuya.net/"><img src="imgs/ikuya_yamada.png" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
+          <td width="25%" style="text-align: center">
+            <a href="https://www.ikuya.net/"
+              ><img
+                src="imgs/ikuya_yamada.png"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
           </td>
         </tr>
         <tr>
-          <td style="text-align:center"><a href="https://chiahsuan156.github.io/">Chia-Hsuan (Michael) Lee</a></td>
-          <td style="text-align:center"><a href="https://homes.cs.washington.edu/~jkasai/">Jungo Kasai</a></td>
-          <td style="text-align:center"><a href="https://ruder.io/"><a href="https://www.shaynelongpre.com/">Shayne Longpre</a></td>
-          <td style="text-align:center"><a href="https://www.ikuya.net/">Ikuya Yamada</a></td>
+          <td style="text-align: center">
+            <a href="https://chiahsuan156.github.io/"
+              >Chia-Hsuan (Michael) Lee</a
+            >
+          </td>
+          <td style="text-align: center">
+            <a href="https://homes.cs.washington.edu/~jkasai/">Jungo Kasai</a>
+          </td>
+          <td style="text-align: center">
+            <a href="https://www.shaynelongpre.com/">Shayne Longpre</a>
+          </td>
+          <td style="text-align: center">
+            <a href="https://www.ikuya.net/">Ikuya Yamada</a>
+          </td>
         </tr>
-        <tr> 
-        <td width="25%" style="text-align:center">
-          <a href="https://ryanzhumich.github.io/"><img src="imgs/rui_zhang.jpeg" width="150px" align="bottom" style="border-radius: 50%"></img> </a>
-        </td>
-      </tr>
-        <tr><td style="text-align:center"><a href="https://ryanzhumich.github.io/">Rui Zhang</a></td></tr>
+        <tr>
+          <td width="25%" style="text-align: center">
+            <a href="https://ryanzhumich.github.io/"
+              ><img
+                src="imgs/rui_zhang.jpeg"
+                width="150px"
+                align="bottom"
+                style="border-radius: 50%"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">
+            <a href="https://ryanzhumich.github.io/">Rui Zhang</a>
+          </td>
+        </tr>
       </table>
     </div>
     <div class="container">
